@@ -1,0 +1,328 @@
+@font-face {
+    font-family: PP Neue Montreal;
+    src: url('PPNeueMontreal-Medium.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PP Neue Montreal", sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #000;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25vw;
+    color: #fff;
+}
+
+.loader h3 {
+    font-size: 2vw;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #dfe1c8;
+    position: relative;
+}
+
+.cursor {
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #d5c300;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+}
+
+.cursor h5 {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.page1 .page1-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.292);
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+
+nav {
+    width: 100%;
+    /* background-color: rgba(162, 27, 27, 0.63); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+}
+
+h3 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+h4 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+.page1-content h1 {
+    font-size: 26vw;
+    font-weight: 100;
+    line-height: 26vw;
+}
+
+.page1-content h1 span {
+    display: inline-block;
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+.page2-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+
+.page2-top h3 {
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 26%;
+}
+
+.page2-top h4 {
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.elem {
+    overflow: hidden;
+}
+
+.elem h1 {
+    font-size: 3.9vw;
+    font-weight: 500;
+}
+
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+
+.page3-top {
+    /* background-color: red; */
+    text-align: center;
+}
+
+.page3-top h4 {
+    margin-bottom: 1vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.page3-top span {
+    font-size: 0.8vw;
+    font-weight: 100;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.page3-top h2 {
+    font-size: 4.25vw;
+    font-weight: 100;
+    letter-spacing:2px;
+    line-height: 90px;
+    text-decoration: underline 0.35vw;
+    transition: text-decoration 0.3s linear;
+}
+
+.page3-top h2:hover {
+    transform-origin: left;
+    text-decoration-color: rgb(138, 138, 138);
+}
+
+.page3-elements {
+    height: 75vh;
+    width: 100%;
+    /* background-color: #d5c300; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vw;
+}
+
+.page3-elements .box {
+    height: 100%;
+    width: 32.5%;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+.page3-elements .box video {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.page3-elements .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: all linear 0.6s;
+}
+
+.page3-elements .box:hover img {
+    opacity: 0;
+}
+
+.page4 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000000; */
+}
+
+.page4 video {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.page4 svg {
+    position: absolute;
+    height: 65%;
+    z-index: 2;
+}
+
+.page4 .circl-head {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page4 .seats3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25vw;
+    color: #fff;
+}
+
+.page4 .seats3 .three span {
+    font-size: 2vw;
+    color: #fff;
+}
+
+.page4 .seats3 .seats h3 {
+    font-size: 1.75vw;
+    color: #fff;
+}
+
+.page4 .available h4 {
+    font-size: 1.8vw;
+    color: #fff;
+}
+
+.page5 {
+    width: 100%;
+    height: 100vh;
+    padding: 4vw 0;
+}
+
+.page5 h1 {
+    font-size: 10vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.601);
+    width: 96%;
+    margin-left: 2%;
+}
+
+.page5 .swiper-div {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 19%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
